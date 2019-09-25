@@ -57,10 +57,12 @@ html, body {
     height: 100%;
 }
 
-
 .container{
 	width: 90%;
 	margin: 0 auto;
+	hr{
+		width: 100%;
+	}
     nav{
 		display: flex;
 		justify-content: space-between;
@@ -71,14 +73,30 @@ html, body {
 	}
 	.skills{
 		display:flex;
+		height:40vh;
 		flex-flow: row wrap;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		margin-bottom:1%;
 		.skillBox{
 			text-align: center;
-			width:26%;
+			height:43%;
+			width:25%;
+			margin-left:2.5%;
+			margin-right:2.5%;
 			margin-top:1%;
 			background-color:lightcoral;
+		}
+	}
+	.workHistory{
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		.employerBox{
+			text-align: center;
+			border:1px solid lightcoral;
+			padding:5px;
+			border-radius: 4%;
+			width:30%;
 		}
 	}
 }

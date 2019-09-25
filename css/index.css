@@ -138,6 +138,9 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+.container hr {
+  width: 100%;
+}
 .container nav {
   display: flex;
   justify-content: space-between;
@@ -148,13 +151,29 @@ body {
 }
 .container .skills {
   display: flex;
+  height: 40vh;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-bottom: 1%;
 }
 .container .skills .skillBox {
   text-align: center;
-  width: 26%;
+  height: 43%;
+  width: 25%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   margin-top: 1%;
   background-color: lightcoral;
+}
+.container .workHistory {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.container .workHistory .employerBox {
+  text-align: center;
+  border: 1px solid lightcoral;
+  padding: 5px;
+  border-radius: 4%;
+  width: 30%;
 }
