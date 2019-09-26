@@ -158,13 +158,26 @@ body {
   }
 }
 .container nav a {
-  color: black;
+  background-color: #32a86b;
+  color: white;
   text-decoration: none;
 }
 .container .intro {
   margin: 2%;
   text-align: center;
   font-size: 4vw;
+}
+.container .intro img {
+  transform: rotate(270deg);
+  border-radius: 4%;
+  height: 10%;
+  width: 10%;
+}
+@media (max-width:500px) {
+  .container .intro img {
+    height: 15%;
+    width: 15%;
+  }
 }
 .container .intro h2 {
   font-family: 'Orbitron', sans-serif;
