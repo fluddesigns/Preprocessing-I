@@ -1,1 +1,252 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width:500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container button {
+  font-family: 'Orbitron', sans-serif;
+}
+.container nav {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:500px) {
+  .container nav {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.container nav a {
+  background-color: #32a86b;
+  color: white;
+  text-decoration: none;
+}
+.container .intro {
+  margin: 2%;
+  text-align: center;
+  font-size: 4vw;
+}
+.container .intro img {
+  transform: rotate(270deg);
+  border-radius: 4%;
+  height: 10%;
+  width: 10%;
+}
+@media (max-width:500px) {
+  .container .intro img {
+    height: 15%;
+    width: 15%;
+  }
+}
+.container .intro h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+.container .skills {
+  display: flex;
+  justify-content: space-between;
+  height: 40vh;
+  flex-flow: row wrap;
+  margin-bottom: 1%;
+}
+@media (max-width:500px) {
+  .container .skills {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.container .skills .skillBox {
+  padding-top: 4%;
+  border-radius: 5%;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  height: 43%;
+  width: 25%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 1%;
+  color: #d3dbd7;
+  background-color: #32a86b;
+}
+@media (max-width:500px) {
+  .container .skills .skillBox {
+    width: 100%;
+  }
+}
+.container .workHistory {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+@media (max-width:500px) {
+  .container .workHistory {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
+.container .workHistory .employerBox {
+  text-align: center;
+  border: 1px solid #32a86b;
+  padding: 5px;
+  border-radius: 4%;
+  width: 30%;
+}
+@media (max-width:500px) {
+  .container .workHistory .employerBox {
+    width: 100%;
+  }
+}
+.container form {
+  margin-top: 2%;
+  text-align: center;
+}
+@media (max-width:500px) {
+  .container form {
+    width: 100%;
+  }
+}
+.container form button {
+  margin-top: 1%;
+}
